@@ -8,3 +8,6 @@ print(b)
 
 c = 4 + 5
 print(c)
+
+d = 1 + 1
+print(d)
