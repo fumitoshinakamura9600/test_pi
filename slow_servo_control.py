@@ -44,9 +44,9 @@ def slow_move_servo(start_angle, end_angle, step, delay):
 try:
     print("サーボモーターをゆっくり動かします...")
     # -90度から90度までゆっくり動かす
-    slow_move_servo(-90, 90, 5, 0.2)
+    slow_move_servo(-90, 90, 1, 0.2)
     # 90度から-90度までゆっくり戻す
-    slow_move_servo(90, -90, 5, 0.2)
+    slow_move_servo(90, -90, 1, 0.2)
 except KeyboardInterrupt:
     print("\n操作を中断しました。")
 finally:
