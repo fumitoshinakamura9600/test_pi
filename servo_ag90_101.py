@@ -16,8 +16,8 @@ time.sleep(1)  #1秒待機
 
 #少しずつ回転
 for degree in range(-90,91):
-    dc = 2.5 + (12.0-2.5)/180:* (degree + 90)  # デューティサイクルを計算
-    p.ChangeDutyCycle(dc)  # デューティサイクルを変更
-    time.sleep(0.03)  # 300ms待機
-    p.ChangeDutyCycle(0)  # デューティサイクルを0にして停止
+    dc = 2.5 + (12.0-2.5)/180* (degree + 90)  # デューティサイクルを計算
+    pwm.ChangeDutyCycle(dc)  # デューティサイクルを変更
+    time.sleep(0.01)  # 100ms待機
+    pwm.ChangeDutyCycle(0)  # デューティサイクルを0にして停止
     
